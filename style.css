@@ -37,3 +37,9 @@ div.text.first {
     background-color: black;
     color: white;
 }
+.title {
+    color: darkslategrey;
+}
+.subtitle {
+    color: darkslategrey;
+}
