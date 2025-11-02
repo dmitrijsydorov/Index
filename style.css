@@ -1,0 +1,39 @@
+span {
+    color: blue;
+    background-color: orange;
+}
+div > p {
+    background-color: yellow;
+}
+div h4 {
+    background-color: beige;
+}
+h1 + h3 {
+    background-color: lightyellow;
+    color: darkgrey;
+}
+span ~ p {
+    background-color: brown;
+}
+.center {
+    background-color: darkslategrey;
+}
+a[href*=page] {
+    color: red;
+}
+div.text {
+    background-color: lightgreen;
+    color: black;
+}
+div.text.first {
+    background-color: lightsalmon;
+    color: red;
+}
+#second {
+    background-color: rebeccapurple;
+    color: white;
+}
+#third.center {
+    background-color: black;
+    color: white;
+}
