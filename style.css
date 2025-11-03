@@ -1,3 +1,6 @@
+body {
+    background-color: lightsalmon;
+}
 span {
     color: blue;
     background-color: orange;
@@ -41,8 +44,5 @@ div.text.first {
     color: darkslategrey;
 }
 .subtitle {
-    color: darkslategrey;
-}
-.fix {
     color: darkslategrey;
 }
