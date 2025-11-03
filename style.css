@@ -46,3 +46,6 @@ div.text.first {
 .subtitle {
     color: darkslategrey;
 }
+.git {
+    background-color: lime;
+}
