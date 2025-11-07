@@ -2,91 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ultramarine!!!!!</title>
+  <title>Table</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
- <h1 class="title">
-   Заголовок
- </h1>
-
- <h2 class="subtitle">
-   tittles
- </h2>
-<h3>
-  (Текст)
-</h3>
-
- <h4 class="fix">
-   fix
- </h4>
-  <span>
-    Застосовується до тегів span. Вага 0,0,0,1
-  </span>
-
-  <div>
-    <p>
-      Цей абзац зафарбований в жовтий колір, тому що він є дочірним тегу section. Вага 0,0,0,2
-    </p>
-      <section>
-        <p>
-          Цей абзац не зафарбований в жовтий колір, тому що він є дочірним тегу div.
-        </p>
-      </section>
-  </div>
-
-
-  <div>
-    <h4>
-      Застосовується до тегів p вкладених в тег div. Вага 0,0,0,2
-    </h4>
-  </div>
-
-  <div>
-    <h1>Заголовок</h1>
-    <h3>Цей заголовок буде стилізовано оскільки він безпосередньо слідує за тегом h1. Вага 0,0,0,2</h3>
-    <h3>Цей заголовок не буде стилізовано</h3>
-  </div>
-
-  <div>
-    <p>Абзац </p>
-    <span>Елемент span</span>
-    <p>Абзац. В цьому випадку всі теги р, які є братами span та слідують за ним, пофарбовані в коричневий колір</p>
-    <p>Вага 0,0,0,2 </p>
-  </div>
-
-  <h5 class="center">Застосовується до селектора класу .center вкладеного в будь-який тег. Вага 0,0,1,0
-  </h5>
-
-  <nav>
-    <a href="index.html/page1">Застосовується</a><br>
-    <a href="index.html/about">Про нас</a><br>
-    <a href="index.html/page2">Зображення</a>
-  </nav>
-  <!--В цьому прикладі використовується тег <а> з атрибутом href. CSS селектор  a[href*="page"] змінить
-  колір першого і третього посилань на червоний, оскільки їх href містить слово "page". Вага 0,0,1,1-->
-
-  <div class="text">Застосовується до селектора класу .text, вкладеного в тег span. Вага 0,0,1,1
-  </div>
-
-  <div class="text first">Застосовується до селектора класу .text first, вкладеного в тег div. Вага 0,0,2,1
-  </div>
-
-  <p id="second">Застосовується до селектора ідентифікатора #second. Вага 0,1,0,0
-  </p>
-
-  <p id="third" class="center">Застосовується до селектора ідентифікатора #third з класом. Вага 0,1,1,0
-  </p>
-
-  <div style="color: red;">Вбудований стиль, має найвищу вагу 1,0,0,0.
-  </div>
-<p class="git">
-  Git - це система контролю версій, яку ми використовуємо для відстеження змін у комп'ютерних файлах
-  та координації роботи над цими файлами серед кількох людей. Вона дозволяє нам зберігати різні версії
-  проєкту, відновлювати попередні стани файлів, порівнювати зміни між версіями та управляти роботою різних
-  учасників проєкту. Git особливо корисний у розробці програмного забезпечення, де він допомагає управляти
-  великими проєктами та забезпечувати ефективну співпрацю розробників.
-</p>
+<table>
+  <tr class="row-1">
+    <td class="first-row" colspan="2"></td>
+    <td class="second-row" colspan="3"></td>
+    <td class="third-row" colspan="2"></td>
+    <td class="fourth-row" rowspan="6"></td>
+  </tr>
+  <tr class="row-2">
+    <td class="first-row" rowspan="2"></td>
+    <td class="second-row" colspan="4" rowspan="4"></td>
+    <td class="third-row" colspan="2" rowspan="2"></td>
+  </tr>
+  <tr class="row-3">
+    <td class="row-3"></td>
+  </tr>
+  <tr class="row-4">
+    <td class="first-row" rowspan="3"></td>
+    <td class="third-row" rowspan="2"></td>
+    <td class="third-row" rowspan="2"></td>
+  </tr>
+  <tr class="row-3">
+    <td class="row-3"></td>
+  </tr>
+  <tr class="row-6">
+    <td class="second-row" colspan="2" rowspan="2"></td>
+    <td class="third-row" colspan="2"></td>
+    <td class="third-row" colspan="2"></td>
+  </tr>
+  <tr class="row-7">
+    <td class="first-row" rowspan="3"></td>
+    <td class="third-row" colspan="2"></td>
+    <td class="second-row" colspan="2" rowspan="2"></td>
+    <td class="fourth-row" rowspan="3"></td>
+  </tr>
+  <tr class="row-8">
+    <td class="second-row" colspan="2" rowspan="2"></td>
+    <td class="third-row" colspan="2"></td>
+  </tr>
+  <tr class="row-9">
+    <td class="third-row" colspan="4"></td>
+  </tr>
+</table>
 </body>
 </html>

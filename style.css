@@ -1,49 +1,90 @@
-body {
-    background-color: lightsalmon;
+table td{
+    border: 5px solid black;
 }
-span {
-    color: blue;
-    background-color: orange;
+
+table {
+    width: auto;
+    height: auto;
+    border-spacing: 0;
 }
-div > p {
-    background-color: yellow;
+tr.row-1 td.first-row {
+    width: 135px;
+    height: 68px;
+
 }
-div h4 {
-    background-color: beige;
-    font-weight: bold;
+
+tr.row-1 td.second-row {
+    width: 234px;
+
 }
-h1 + h3 {
-    background-color: lightyellow;
-    color: darkgrey;
+
+tr.row-1 td.third-row {
+    width: 144px;
+    background-color: #e6ba4d;
 }
-span ~ p {
-    background-color: brown;
+
+tr.row-1 td.fourth-row {
+    width: 20px;
+
 }
-.center {
-    background-color: darkslategrey;
+
+tr.row-2 td.first-row {
+    width: 68px;
+    height: 141px;
 }
-a[href*=page] {
-    color: red;
+
+tr.row-2 td.second-row {
+    width: 286px;
+    height: 400px;
+    background-color: red;
 }
-div.text {
-    background-color: lightgreen;
-    color: black;
+
+tr.row-2 td.third-row {
+    width: 250px;
+    height: 200px;
+    background-color: #e6ba4d;
 }
-div.text.first {
-    background-color: lightsalmon;
-    color: red;
+tr.row-4 td.first-row {
+    width: 68px;
+    height: 260px;
 }
-#second {
-    background-color: rebeccapurple;
-    color: white;
+tr.row-4 td.third-row {
+    width: 68px;
 }
-#third.center {
+tr.row-6 td.second-row {
+    width: 162px;
+    height: 80px;
     background-color: black;
-    color: white;
 }
-.title {
-    color: darkslategrey;
+tr.row-6 td.third-row {
+    width: 80px;
 }
-.subtitle {
-    color: darkslategrey;
+tr.row-7 td.first-row {
+    width: 68px;
+    background-color: #e6ba4d;
+}
+tr.row-7 td.second-row {
+    width: 162px;
+    background-color: darkblue;
+}
+tr.row-7 td.third-row {
+    width: 160px;
+    height: 68px;
+}
+tr.row-7 td.fourth-row {
+    background-color: red;
+}
+tr.row-8 td.second-row {
+    width: 162px;
+}
+tr.row-8 td.third-row {
+    width: 160px;
+    height: 25px;
+    background-color: black;
+}
+tr.row-9 td.third-row {
+    height: 25px;
+}
+.row-3 {
+    border: 0;
 }
