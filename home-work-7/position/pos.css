@@ -1,0 +1,44 @@
+.one {
+    background-color: orange;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.special {
+    background-color: green;
+    top: 15px;
+    right: 20px;
+}
+.call {
+    background-color: lightseagreen;
+    position: fixed;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 50px;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+}
+.chapter {
+    background-color: olive;
+    height: 80px;
+    width: 80px;
+    position: sticky;
+    top: 10px;
+}
+.chapter1 {
+    background-color: darkviolet;
+}
+.chapter2 {
+    background-color: violet;
+}
+.chapter3 {
+    background-color: #cdaddd;
+}
+section {
+    margin-top: 10px;
+}
+section p {
+    margin-left: 90px;
+}

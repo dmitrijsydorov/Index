@@ -1,0 +1,17 @@
+.extra {
+    border: 2px solid black;
+    background-color: greenyellow;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.text {
+    text-align: justify;
+}
+.first {
+    float: left;
+}
+.clearfix {
+    clear: both;
+}
