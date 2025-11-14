@@ -1,0 +1,65 @@
+.container {
+    background-color: lightgray;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.item {
+    background-color: grey;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+.container1 {
+    overflow: hidden;
+    float: right;
+    width: 350px;
+}
+
+.item1 {
+    background-color: grey;
+    width: 150px;
+    height: 122px;
+    margin: 10px;
+    border: 1px solid black;
+    float: left;
+}
+.item2 {
+    background-color: grey;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    float: right;
+}
+.container2 {
+    overflow: hidden;
+    margin: auto;
+    width: 350px;
+}
+.item3 {
+    background-color: grey;
+    width: 150px;
+    height: 122px;
+    margin: 10px;
+    border: 1px solid black;
+    float: left;
+}
+.item4 {
+    background-color: grey;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    float: right;
+}
