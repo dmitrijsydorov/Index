@@ -1,0 +1,80 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.header {
+  padding-bottom: 141px;
+
+  .primary-middle {
+    background-color: $bg-light;
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-inline: 16px;
+  }
+
+  .navigation {
+    padding-block: 79px;
+    letter-spacing: 3px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .menu {
+    @include flex(wrap);
+    gap: 48px;
+    font-size: 16px;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $color-text;
+  }
+
+  .menu li a:hover {
+    color: $color-text-hover;
+  }
+
+  .page-title {
+    padding-top: 83px;
+    padding-bottom: 68px;
+  }
+
+  .page-title h1 {
+    font-size: 45px;
+  }
+
+  .welcome-text {
+    @extend section.about-me .container .about-text;
+    font-size: 16px;
+    color: $color-text-light;
+    padding-bottom: 65px;
+  }
+
+  .write-me {
+    padding: 25px 41px 17px 41px;
+    background-color: $bg-dark;
+    color: $color-text-button;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 375px) {
+    .menu {
+      display: none;
+    }
+    .menu-button {
+      display: inline;
+    }
+  }
+}

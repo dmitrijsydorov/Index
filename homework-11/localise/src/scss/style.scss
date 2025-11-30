@@ -1,0 +1,89 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "header" as *;
+@use "footer" as *;
+
+@font-face {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+section.about-me {
+  background-color: $bg-white;
+
+  section.about-me .container {
+    padding-block: 112px 100px;
+    text-align: center;
+  }
+
+  section.about-me .container h2 {
+    font-size: 32px;
+    padding-bottom: 50px;
+  }
+
+  section.about-me .container .about-text {
+    max-width: 540px;
+    margin: 0 auto;
+    color: $color-text-light;
+    line-height: 164%;
+  }
+
+  section.projects {
+    padding-block: 100px;
+  }
+
+  .dark {
+    background-color: $bg-dark;
+  }
+
+  section.projects .my-projects {
+    @include flex(wrap, center);
+    gap: 49px;
+    color: $color-text-projects;
+    padding-block: 32px;
+  }
+
+  section.projects .my-projects li {
+    list-style: none;
+    width: 141px;
+    height: 50px;
+    background-image: url("../../assets/image/group.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 70px;
+  }
+
+  section.projects .my-projects li span {
+    font-size: 21px;
+  }
+
+  section.how-i-work .container {
+    padding-block: 100px;
+    text-align: center;
+  }
+
+  section.how-i-work .container h2 {
+    font-size: 32px;
+    padding-bottom: 50px;
+  }
+
+  section.how-i-work .container .work-text {
+    @extend section.about-me .container .about-text;
+    color: $color-text-light;
+    padding-bottom: 57px;
+  }
+
+  .working-video {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+}
