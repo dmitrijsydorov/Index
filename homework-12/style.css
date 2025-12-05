@@ -1,0 +1,35 @@
+.square {
+    cursor: pointer;
+    width: 300px;
+    fill: blue;
+    transition: fill 0.3s;
+}
+.square:hover {
+    fill: #806653;
+}
+
+.jump-stroke {
+    transition:
+            stroke 0.3s ease,
+            transform 0.3s ease;
+    transform-origin: center;
+}
+
+.square:hover .jump-stroke {
+    stroke: #ff4d4d;
+    transform: translateY(-6px);
+}
+
+
+.rectangle {
+    width: 300px;
+}
+
+.circle {
+    width: 300px;
+}
+
+.ellipse {
+    width: 300px;
+}
+
