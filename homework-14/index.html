@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto repair shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+      .box {
+          padding: 20px;
+          background: lightgray;
+          border: 1px solid lightgray;
+          border-radius: 6px;
+          margin-bottom: 15px;
+      }
+  </style>
+</head>
+<body>
+<header class="container mt-3">
+  <div class="box">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" fill="currentColor" class="bi bi-wrench-adjustable-circle" viewBox="0 0 16 16">
+          <path d="M12.496 8a4.5 4.5 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11q.04.3.04.61"/>
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-1 0a7 7 0 1 0-13.202 3.249l1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.5 4.5 0 0 1-1.592-.29L4.747 14.2A7 7 0 0 0 15 8m-8.295.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27z"/>
+        </svg></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Головна</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Про нас</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Послуги
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Покраска</a></li>
+                <li><a class="dropdown-item" href="#">Ремонт кузова</a></li>
+                <li><a class="dropdown-item" href="#">Розвал сходження</a></li>
+                <li><a class="dropdown-item" href="#">Автоелектрик</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Інше...</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Пошук</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <aside class="col-12 col-md-6 col-lg-3">
+      <div class="box">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/photo1.jpg" class="d-block w-100" alt="automobile 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/photo2.jpg" class="d-block w-100" alt="automobile 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/photo3.jpg" class="d-block w-100" alt="automobile 3">
+            </div>
+            <div class="carousel-item">
+              <img src="images/photo4.jpg" class="d-block w-100" alt="automobile 4">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+    <main class="col-12 col-md-6 col-lg-6">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Техобслуговування авто
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Що ми пропонуємо.</strong>До ваших послуг повний цикл обслуговування автомобіля у Києві. Важливо:
+              всі діагностичні роботи і сервіс робиться «під одним дахом», тому у разі виявлення будь-яких несправностей
+              Star Service забезпечує як базові потреби з обслуговування, так і додаткові послуги. А саме:
+              <ul>
+                <li>Діагностика ходової (перевірка амортизаторів, сайлентблоків та інших деталей підвіски)</li>
+                <li>Заміна масла в двигуні</li>
+                <li>Діагностика рульового керування</li>
+                <li>Перевірка і діагностика блоків керування двигуном</li>
+                <li>Перевірка, регулювання розвалу-сходження</li>
+                <li>Заміна повітряного фільтра (Мерседес, БМВ, Тойота, Лексус, Вольво, Пежо, Рено, Сітроен та ін.)</li>
+                <li>Перевірка свічок запалювання і їх заміна за необхідності</li>
+                <li>Перевірка працездатності акумулятора і його підзарядка та підбір</li>
+                <li>Оцінка стану шин, балансування, шиномонтаж</li>
+                <li>Оцінка рівня технічних рідин і за необхідності долив (перевірка гальмівної системи, антифризу тощо).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ПІДБІР ЗАПЧАСТИН
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Правильний підбір запчастин – це запорука надійності і тривалості експлуатації автомобіля.
+              Не менш важливим є ще й економія часу, бо навіть при купівлі деталей чи компонентів за VIN-кодом можна
+              отримати запасні частини, які з тих чи інших причин не підходять для конкретної модифікації авто.
+              Компанія Star Service працює напряму з постачальниками без посередників, тому ми гарантуємо якість і
+              конкурентні ціни на як на оригінальні запчастини, так і на перевірені аналоги від світових лідерів.
+              Ви самі обираєте, які деталі і компоненти хочете встановити на своє авто, але ми завжди дамо пораду,
+              зважаючи на наш досвід і відгуки наших постійних клієнтів. Також ми можете завітати до нашого сервісу,
+              придбавши запасні частини для ТО чи ТР заздалегідь.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              КУЗОВНІ ТА МАЛЯРНІ РОБОТИ
+
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Компанія Star Service виконує кузовні та малярні роботи всіх видів складності, незалежно від марки і моделі авто.
+              Підбір кольору, підготовка до фарбування, локальне або повне фарбування здійснюються на обладнанні SAIMA,
+              STANDOX, BLOWTHERM. Рихтування проводиться на професійних стендах AUTOROBOT.
+              Кузовний ремонт в автосервісі Star Service коштує на 40% дешевше, ніж в офіційних дилерських центрах.
+              При цьому ми гарантуємо високу якість рівня офіціалів!
+              Кузовний ремонт автомобіля в автосервісі Star Service – це повний спектр кузовних послуг будь-якої
+              складності, виконаних за технологією виробника. Високотехнологічне обладнання, кваліфіковані фахівці
+              та ліцензійні матеріали забезпечують виняткову якість та повну відповідність оригінальним характеристикам заводу.
+              Перелік послуг:
+              <ul>
+                <li>Ремонт та фарбування бамперів</li>
+                <li>Ремонт та фарбування переднього крила</li>
+                <li>Ремонт та фарбування капота</li>
+                <li>Ремонт та фарбування дверей</li>
+                <li>Ремонт та фарбування заднього крила</li>
+                <li>Ремонт та фарбування даху</li>
+                <li>Ремонт та фарбування порогів</li>
+                <li>Ремонт та фарбування багажника</li>
+                <li>Фарбування автомобіля повністю</li>
+                <li>Lокальний ремонт кузова автомобіля</li>
+                <li>Стапельні роботи</li>
+                <li>Ремонт та фарбування решітки радіатора</li>
+                <li>Фарбування автомобіля матовою фарбою</li>
+                <li>Глибоке полірування авто</li>
+                <li>Фарбування деталей</li>
+                <li>Локальне фарбування автомобіля</li>
+                <li>Локальне фарбування бампера</li>
+                <li>Локальний ремонт кузова</li>
+                <li>Фарбування деталей автомобіля
+                <li>Заміна порогів</li>
+                <li>Нанесення захисного покриття Раптор</li>
+                <li>Полірування авто</li>
+                <li>Ремонт бампера із пластику</li>
+                <li>Ремонт вм’ятин без фарбування</li>
+                <li>Видалення подряпин на кузові автомобіля без фарбування</li>
+                <li>Заміна бампера</li>
+                <li>Заміна решітки радіатора</li>
+                <li>Заміна фари</li>
+                <li>Заміна переднього крила</li>
+                <li>Заміна капота</li>
+                <li>Заміна лобового скла</li>
+                <li>Заміна дзеркала</li>
+                <li>Заміна даху</li>
+                <li>Заміна дверей</li>
+                <li>Заміна скла дверей</li>
+                <li>Заміна заднього скла</li>
+                <li>Заміна заднього крила</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="col-12 col-md-6 col-lg-3">
+      <div class="box">
+        <div class="container py-5">
+          <div class="row justify-content-end">
+            <div class="col-lg-12">
+
+              <h4 class="mb-3">Запис на СТО</h4>
+
+              <form>
+                <div class="mb-3">
+                  <label for="fullname" class="form-label">ПІБ</label>
+                  <input type="text" class="form-control" id="fullname" placeholder="Пилипенко Пилип" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Телефон</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="+380150000000" required>
+                </div>
+
+                <div class="mb-3">
+                  <label for="text" class="form-label">Держ номер</label>
+                  <input type="text" class="form-control" id="text" placeholder="АА 0000 АА" required>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="list" class="form-label">Підйомник</label>
+                    <select class="form-select" id="list" required>
+                      <option value="">Оберіть...</option>
+                      <option>Підйомник 1</option>
+                      <option>Підйомник 2</option>
+                      <option>Підйомник 3</option>
+                      <option>Автоелектрик</option>
+                      <option>Покраска</option>
+                      <option>Ремонт кузова</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6 mb-3">
+                    <label for="date" class="form-label">Початок</label>
+                    <input type="datetime-local" class="form-control" id="date" required>
+                  </div>
+                </div>
+
+                <hr class="mb-3">
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit">
+                  Записатись
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </aside>
+  </div>
+</div>
+<footer class="container mt-3 mb-3">
+  <div class="box text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Про нас</h5>
+          <p class="small">
+            <b>Професіоналізм,
+              досвідченість і порядність</b>
+            Це те, що вирізняє нас від інших. Команда Компанії Стар Сервіс – це найкращі спеціалісти офіційних
+            дилерських центрів. Наші станції – одні з найбільших післягарантійних автосервісів в Україні з
+            сертифікованим і новітнім обладнанням, враховуючи устаткування для повного спектру обслуговування броньованих автомобілів!
+          </p>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <h5>Посилання</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Головна</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Про нас</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <h5>Контакти</h5>
+          <p class="small mb-1">Email: info@example.com</p>
+          <p class="small mb-1">Тел: +3 (900) 000-00-00</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-3 border-top pt-3">
+        <small>© 2025 Всі права захищені.</small>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
