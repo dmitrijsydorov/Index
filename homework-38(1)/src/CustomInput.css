@@ -1,0 +1,8 @@
+.border {
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 10px;
+}
+.label-style {
+    display: flex;
+    padding: 10px;
+}
