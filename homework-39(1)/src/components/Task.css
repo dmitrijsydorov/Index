@@ -1,0 +1,10 @@
+.to-do {
+    font-weight: bold;
+}
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+.list {
+    margin-left: 15px;
+}
