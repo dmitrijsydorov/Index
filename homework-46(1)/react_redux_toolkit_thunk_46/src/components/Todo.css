@@ -1,0 +1,54 @@
+.todoItem {
+    width: 600px;
+    text-align: left;
+    padding: 8px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.done {
+    text-decoration: line-through;
+    color: rgb(73, 73, 73);
+}
+
+.title {
+    text-align: left;
+    margin-right: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    font-size: 25px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.btnDone {
+    color: #007330;
+}
+.btnDelete {
+    color: #bb004e;
+}
+
+.btnDone {
+    color: #2ecc71;
+}
+
+.btnUndone {
+    color: #116c58;
+}
